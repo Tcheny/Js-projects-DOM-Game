@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+.game {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+}
+.playerLeft {
+  width: 50%;
+  float: left;
+  height: 600px;
+  padding: 100px;
+}
+.playerRight {
+  width: 50%;
+  float: right;
+  height: 600px;
+  padding: 100px;
+}
+.playerName {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.playerScore {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 100;
+  color: #EB4D4D;
+  margin-bottom: 130px;
+}
+.playerCurrent {
+  background-color: #EB4D4D;
+  color: #fff;
+  width: 40%;
+  margin: 0 auto;
+  padding: 12px;
+  text-align: center;
+}
+.currentLabel {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #222;
+}
+.currentScore {
+  font-size: 30px;
+}
+button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #555;
+  cursor: pointer;
+  font-weight: lighter;
+}
+.btnNew {
+  top: 45px;
+}
+.btnRoll {
+  top: 400px;
+}
+.btnHold {
+  top: 460px;
+}
+i {
+  color : #EB4D4D;
+  margin-right: 15px;
+  font-size: 32px;
+  vertical-align: middle;
+}
+button:hover{
+  font-weight: 400;
+}
+.dice {
+  position: absolute;
+  box-shadow: 0px 10px 30px rgba(168, 168, 166, 0.65);
+  border-radius: 20px;
+  width: 130px;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
