@@ -1,9 +1,17 @@
 // var press = function() {}     es5
 // const press = () => {}        es6
 
-// let players;
-// let scores;
-// let game;
+let players;
+let scores;
+let activeGame;
+
+let currentRight = document.getElementById('currentPright')
+let scoreRight = document.getElementById('scorePright');
+
+// function newGame
+const newGame = () => {
+  location.reload();
+}
 
 // function roll
 const roll = () => {
@@ -13,25 +21,25 @@ const roll = () => {
   // si le random est différent de 1
   if (random != 1){
     // currentPright = currentPright + random
-    document.getElementById('currentPright').innerHTML = Number(document.getElementById('currentPright').innerHTML) + random;
+    currentRight.innerHTML = Number(currentRight.innerHTML) + random;
   } else {
     // sinon currentPright = 0
-    document.getElementById('currentPright').innerHTML = 0;
+    currentRight.innerHTML = 0;
   }
-  // dice.src = img(random)
+  // dice. src = img(random)
   document.getElementById('dice').src = `images/dice-${random}.png`
 }
 
 // function hold
 const hold = () => {
-
   //  scorePright = number(scorePright) + number(currentPright)
-  document.getElementById('scorePright').innerHTML = Number(document.getElementById('scorePright').innerHTML) + Number(document.getElementById('currentPright').innerHTML);
+  scoreRight.innerHTML = Number(scoreRight.innerHTML) + Number(currentRight.innerHTML);
 
   // currentPright = 0
-  document.getElementById('currentPright').innerHTML = "0";
+  currentRight.innerHTML = "0";
 
 }
 
+document.getElementById('btnNew').addEventListener('click', newGame);
 document.getElementById('btnRoll').addEventListener('click', roll);
 document.getElementById('btnHold').addEventListener('click', hold);
