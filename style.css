@@ -61,6 +61,15 @@ body {
 .currentScore {
   font-size: 30px;
 }
+.title {
+  position: absolute;
+  font-size: 20px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Cinzel', serif;
+  color: rgb(52, 68, 172);
+}
 button {
   position: absolute;
   background: none;
@@ -74,7 +83,7 @@ button {
   font-weight: lighter;
 }
 .btnNew {
-  top: 45px;
+  top: 100px;
 }
 .btnRoll {
   top: 400px;
