@@ -73,6 +73,9 @@ const hold = () => {
       playerLeft.style.color = "red";
       playerLeft.style.fontWeight= "bold";
       playerLeft.innerHTML = "WINNER !"
+      document.getElementById("btnRoll").disabled = true;
+      document.getElementById("btnHold").disabled = true;
+
     }
     // on a hold du coup on switchPlayers
     switchPlayers();
@@ -87,6 +90,9 @@ const hold = () => {
       playerRight.style.color = "red";
       playerRight.style.fontWeight= "bold";
       playerRight.innerHTML = "WINNER !"
+      document.getElementById("btnRoll").disabled = true;
+      document.getElementById("btnHold").disabled = true;
+
 
     }
     // on a hold du coup on switchPlayers
