@@ -1,12 +1,15 @@
 // var press = function() {}     es5
 // const press = () => {}        es6
+let activeGame = true;
 
-let players;
-let scores;
-let activeGame;
+let currentRight = document.getElementById('currentPright');
+let currentLeft = document.getElementById('currentPleft');
 
-let currentRight = document.getElementById('currentPright')
 let scoreRight = document.getElementById('scorePright');
+let scoreLeft = document.getElementById('scorePleft');
+
+let playerRight = document.getElementById('namePright');
+let playerLeft = document.getElementById('namePleft');
 
 // function newGame
 const newGame = () => {
@@ -37,8 +40,14 @@ const hold = () => {
 
   // currentPright = 0
   currentRight.innerHTML = "0";
+  if (Number(scoreRight.innerHTML) >= 100) {
+    playerRight.style.color = "red";
+    playerRight.style.fontWeight= "bold";
+    playerRight.innerHTML = "WINNER !"
+  }
 
 }
+
 
 document.getElementById('btnNew').addEventListener('click', newGame);
 document.getElementById('btnRoll').addEventListener('click', roll);
