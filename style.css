@@ -12,6 +12,9 @@ body {
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.09);
   overflow: hidden;
 }
+.active {
+  background-color: rgba(204, 228, 250, 0.63);
+}
 .playerLeft {
   width: 50%;
   float: left;

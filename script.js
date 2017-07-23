@@ -1,5 +1,7 @@
 // var press = function() {}     es5
 // const press = () => {}        es6
+
+
 let activeGame = true;
 
 let currentRight = document.getElementById('currentPright');
@@ -35,18 +37,16 @@ const roll = () => {
 
 // function hold
 const hold = () => {
-  //  scorePright = number(scorePright) + number(currentPright)
   scoreRight.innerHTML = Number(scoreRight.innerHTML) + Number(currentRight.innerHTML);
 
-  // currentPright = 0
   currentRight.innerHTML = "0";
   if (Number(scoreRight.innerHTML) >= 100) {
     playerRight.style.color = "red";
     playerRight.style.fontWeight= "bold";
     playerRight.innerHTML = "WINNER !"
   }
-
 }
+
 
 
 document.getElementById('btnNew').addEventListener('click', newGame);
