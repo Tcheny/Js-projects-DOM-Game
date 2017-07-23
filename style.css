@@ -74,6 +74,7 @@ button {
   position: absolute;
   background: none;
   border: none;
+  outline: none;
   font-size: 20px;
   text-transform: uppercase;
   left: 50%;
