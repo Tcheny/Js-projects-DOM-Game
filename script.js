@@ -14,7 +14,7 @@ const newGame = () => {
   location.reload();
 }
 
-// function activeGame
+// function activeGame pour switcher les joueurs
 const switchPlayers = () => {
   // si activeGame est vrai
   if (activeGame) {
@@ -30,7 +30,7 @@ const switchPlayers = () => {
   }
 }
 
-// function roll
+// function roll pour le dé
 const roll = () => {
   // random de 1 à 6
   let random = Math.floor(Math.random()*6)+1;
@@ -59,7 +59,7 @@ const roll = () => {
   document.getElementById('dice').src = `images/dice-${random}.png`
 }
 
-// quand on click sur hold
+// function click sur hold pour récupérer le current score
 const hold = () => {
   // si l'activeGame
   if(activeGame){
@@ -92,8 +92,7 @@ const hold = () => {
       playerRight.innerHTML = "WINNER !"
       document.getElementById("btnRoll").disabled = true;
       document.getElementById("btnHold").disabled = true;
-
-
+      
     }
     // on a hold du coup on switchPlayers
     switchPlayers();
