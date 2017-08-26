@@ -2,9 +2,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
+  background-image: url('images/wood.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .game {
+  background-color: #FFF;
   width: 80%;
+  height: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12,8 +17,42 @@ body {
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.09);
   overflow: hidden;
 }
+.homepage {
+  padding: 10px 50px;
+}
+.rules {
+  font-family: 'Quantico';
+  margin-bottom: 30px;
+}
+.rulesTitle {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.gameRules {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: 'Quantico';
+  text-align: justify;
+  line-height: 200%;
+}
+.button {
+  margin: 40px 0;
+  text-align: center;
+}
+.btn {
+  padding: 10px 20px;
+  color: #FFF;
+  background-color: #EB4D4D;
+  font-size: 18px;
+}
+.btn:hover {
+  background-color: #b50606;
+  color: #FFF;
+  transition: 0.5s;
+}
 .active {
-  background-color: rgba(204, 228, 250, 0.63);
+  background-color: rgba(136, 102, 78, 0.17);
 }
 .playerLeft {
   width: 50%;
@@ -63,12 +102,10 @@ body {
 }
 .title {
   position: absolute;
-  font-size: 20px;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: 'Cinzel', serif;
-  color: rgb(52, 68, 172);
+  font-size: 20px;
 }
 button {
   position: absolute;
@@ -81,7 +118,7 @@ button {
   transform: translateX(-50%);
   color: #555;
   cursor: pointer;
-  font-weight: lighter;
+  font-weight:lighter;
 }
 .btnNew {
   top: 100px;
@@ -98,8 +135,12 @@ i {
   font-size: 32px;
   vertical-align: middle;
 }
+.icon {
+  margin: 0 5px;
+}
 button:hover{
-  font-weight: 400;
+  font-weight: 900;
+  color: #000;
 }
 .dice {
   position: absolute;
