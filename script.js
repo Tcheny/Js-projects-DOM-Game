@@ -11,17 +11,17 @@ let playerLeft = document.getElementById('namePleft');
 
 // function newGame
 const newGame = () => {
-  location.reload();
+  location.reload(); // reload la page
 }
 
 // function activeGame pour switcher les joueurs
 const switchPlayers = () => {
-  // si activeGame est vrai
+  // si activeGame est vrai active et désactive le tour des joueurs
   if (activeGame) {
     activeGame = false;
-    currentLeft.innerHTML = "0";
-    document.getElementById('activeLeft').classList.remove('active');
-    document.getElementById('activeRight').classList.add('active');
+    currentLeft.innerHTML = "0"; // Current score remit a 0
+    document.getElementById('activeLeft').classList.remove('active'); // retire la class "active" du joueur gauche
+    document.getElementById('activeRight').classList.add('active'); // ajoute la calss "active" du joueur droit
   } else {
     activeGame = true;
     currentRight.innerHTML = "0";
@@ -92,7 +92,7 @@ const hold = () => {
       playerRight.innerHTML = "WINNER !"
       document.getElementById("btnRoll").disabled = true;
       document.getElementById("btnHold").disabled = true;
-      
+
     }
     // on a hold du coup on switchPlayers
     switchPlayers();
