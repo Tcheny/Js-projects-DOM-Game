@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,65 +15,23 @@
   <link rel="stylesheet" href="style.css">
   <title>PIG GAME</title>
 </head>
+
 <body>
 
-  <div class="game clearfix">
-    <!-- Player 1 -->
-    <div class="playerLeft active" id="activeLeft">
-      <div class="playerName" id="namePleft">
-        Player 1
-      </div>
-      <div class="playerScore" id="scorePleft">
-        0
-      </div>
-      <div class="playerCurrent">
-        <div class="currentLabel">
-          Current
-        </div>
-        <div class="currentScore" id="currentPleft">
-          0
-        </div>
-      </div>
-    </div>
-
-    <div class="title rules"><h1>PIG GAME</h1></div>
-    <!-- Player 2 -->
-    <div class="playerRight" id="activeRight">
-      <div class="playerName" id="namePright">
-        Player 2
-      </div>
-      <div class="playerScore" id="scorePright">
-        0
-      </div>
-      <div class="playerCurrent">
-        <div class="currentLabel">
-          Current
-        </div>
-        <div class="currentScore" id="currentPright">
-          0
-        </div>
-      </div>
-    </div>
-
-    <!-- Buttons -->
-    <button id="btnNew" class="btnNew">
-      <i class="ion-ios-plus-outline"></i>
-      New game
-    </button>
-    <button id="btnRoll" class="btnRoll">
-      <i class="ion-ios-loop"></i>
-      Roll dice
-    </button>
-    <button id="btnHold" class="btnHold">
-      <i class="ion-ios-download-outline"></i>
-      Hold
-    </button>
-
-    <!-- Image Dice -->
-    <img src="images/dice-1.png" alt="dice" class="dice" id="dice">
+  <div class="game homepage clearfix">
+    <h1 class="rules rulesTitle">PIG GAME</h1>
+    <h2 class="rules">GAME RULES :</h2>
+    <ul class="gameRules">
+      <li>The game has 2 players, playing in rounds.</li>
+      <li>In each turn, a player rolls dices as many times as he whishes <i class="ion-ios-loop icon"></i> ROLL DICE. Each result get added to his CURRENT score.</li>
+      <li>BUT, if the player rolls a 1, all his CURRENT score gets lost. After that, it's the next player's turn.</li>
+      <li>The player can choose to <i class="ion-ios-plus-outline icon"></i> HOLD, which means that his CURRENT score gets added to his GLOBAL score. After that, it's the next player's turn.</li>
+      <li>The first player to reach 100 points on GLOBAL score wins the game.</li>
+    </ul>
+    <div class="button"><a class="btn" href="game.html">LET'S PLAY !</a></div>
   </div>
-
 
   <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

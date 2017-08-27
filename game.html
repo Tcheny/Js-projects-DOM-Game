@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- fonts google -->
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Lato|Quantico:300,400,700" rel="stylesheet">
+  <!-- fonts iconics -->
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <title>PIG GAME</title>
+</head>
+<body>
+
+  <div class="game clearfix">
+    <!-- Player 1 -->
+    <div class="playerLeft active" id="activeLeft">
+      <div class="playerName" id="namePleft">
+        Player 1
+      </div>
+      <div class="playerScore" id="scorePleft">
+        0
+      </div>
+      <div class="playerCurrent">
+        <div class="currentLabel">
+          Current
+        </div>
+        <div class="currentScore" id="currentPleft">
+          0
+        </div>
+      </div>
+    </div>
+
+    <div class="title rules"><h1>PIG GAME</h1></div>
+    <!-- Player 2 -->
+    <div class="playerRight" id="activeRight">
+      <div class="playerName" id="namePright">
+        Player 2
+      </div>
+      <div class="playerScore" id="scorePright">
+        0
+      </div>
+      <div class="playerCurrent">
+        <div class="currentLabel">
+          Current
+        </div>
+        <div class="currentScore" id="currentPright">
+          0
+        </div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <button id="btnNew" class="btnNew">
+      <i class="ion-ios-plus-outline"></i>
+      New game
+    </button>
+    <button id="btnRoll" class="btnRoll">
+      <i class="ion-ios-loop"></i>
+      Roll dice
+    </button>
+    <button id="btnHold" class="btnHold">
+      <i class="ion-ios-download-outline"></i>
+      Hold
+    </button>
+
+    <!-- Image Dice -->
+    <img src="images/dice-1.png" alt="dice" class="dice" id="dice">
+  </div>
+
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
